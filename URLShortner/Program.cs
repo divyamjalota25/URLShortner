@@ -9,6 +9,7 @@ using Google.Apis.Http;
 using System.Web;
 using System.Xml;
 using BitlyAPI;
+using System.Threading.Tasks;
 
 namespace URLShortner
 {
@@ -21,12 +22,17 @@ namespace URLShortner
             var newLink = linkResponse.Link;
             return newLink;
         }
-        static void Main(string[] args)
+        static async Task Main(string[] args)
         {
+            Console.WriteLine("Enter URL to shorten: ");
             string longURL = Console.ReadLine();
-            Console.WriteLine(stringShortenAsync(longURL));
+            var bitly = new Bitly("e61f727aec6760256e23dab252b5ea13f7087a48");
+            var linkResponse = await bitly.PostShorten(longURL);
+            var newLink = linkResponse.Link;
+            Console.WriteLine("Shortened URL is: ");
+            Console.WriteLine(newLink);
 
-            
+
 
         }
     }
