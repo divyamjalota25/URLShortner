@@ -44,6 +44,10 @@
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
           "dependencies": {
+            "BitlyAPI": {
+              "target": "Package",
+              "version": "[4.0.1, )"
+            },
             "Google.Apis.Urlshortener.v1": {
               "target": "Package",
               "version": "[1.41.1.138, )"

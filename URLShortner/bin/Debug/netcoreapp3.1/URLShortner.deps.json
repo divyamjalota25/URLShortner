@@ -8,10 +8,22 @@
     ".NETCoreApp,Version=v3.1": {
       "URLShortner/1.0.0": {
         "dependencies": {
+          "BitlyAPI": "4.0.1",
           "Google.Apis.Urlshortener.v1": "1.41.1.138"
         },
         "runtime": {
           "URLShortner.dll": {}
+        }
+      },
+      "BitlyAPI/4.0.1": {
+        "dependencies": {
+          "Newtonsoft.Json": "10.0.2"
+        },
+        "runtime": {
+          "lib/netstandard2.1/BitlyAPI.dll": {
+            "assemblyVersion": "4.0.1.0",
+            "fileVersion": "4.0.1.0"
+          }
         }
       },
       "Google.Apis/1.41.1": {
@@ -873,6 +885,13 @@
       "type": "project",
       "serviceable": false,
       "sha512": ""
+    },
+    "BitlyAPI/4.0.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-xP+2TGOQlDgmeu2asGYyPi/TyDCltt3MCxZ20l0wYZQEKNLjCWBX2UwFGdErJjOlPQwP3Ss3DxYY0mFxXRO7ZQ==",
+      "path": "bitlyapi/4.0.1",
+      "hashPath": "bitlyapi.4.0.1.nupkg.sha512"
     },
     "Google.Apis/1.41.1": {
       "type": "package",

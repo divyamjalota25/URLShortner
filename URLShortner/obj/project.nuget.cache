@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "LuEQvoY/4RaqvV3pGknTz+frfuhpk4DWHKwhvlWvvFhfYszQuguYMZPVg1ffj8O24WiM755/37srxvG9NoaUuQ==",
+  "dgSpecHash": "iOHs37hbOPsx0yns2i/rgV5qKcJlFlNZsoeWhsUYjGQAs43bXzrd8HrWR85aRLhPnMwOWDCOZ7CUkY6VfHWGrQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\Whitefang\\source\\repos\\URLShortner\\URLShortner\\URLShortner.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\Whitefang\\.nuget\\packages\\bitlyapi\\4.0.1\\bitlyapi.4.0.1.nupkg.sha512",
     "C:\\Users\\Whitefang\\.nuget\\packages\\google.apis\\1.41.1\\google.apis.1.41.1.nupkg.sha512",
     "C:\\Users\\Whitefang\\.nuget\\packages\\google.apis.auth\\1.41.1\\google.apis.auth.1.41.1.nupkg.sha512",
     "C:\\Users\\Whitefang\\.nuget\\packages\\google.apis.core\\1.41.1\\google.apis.core.1.41.1.nupkg.sha512",

@@ -6,28 +6,28 @@ using Google.Apis.Services;
 using Google.Apis.Urlshortener.v1;
 using Google.Apis.Urlshortener.v1.Data;
 using Google.Apis.Http;
+using System.Web;
+using System.Xml;
+using BitlyAPI;
 
 namespace URLShortner
 {
     class Program
     {
-        private const string APIKey = "AIzaSyAXvB2FFFbW5lwxUNqN1a1CxZWf3XghHhA";
+        //private const string ApiKey = "AIzaSyAXvB2FFFbW5lwxUNqN1a1CxZWf3XghHhA";
+        async System.Threading.Tasks.Task<string> stringShortenAsync(string longURL) {
+            var bitly = new Bitly("e61f727aec6760256e23dab252b5ea13f7087a48");
+            var linkResponse = await bitly.PostShorten(longURL);
+            var newLink = linkResponse.Link;
+            return newLink;
+        }
         static void Main(string[] args)
         {
-            var initializer = new BaseClientService.Initializer
-            {
-                ApiKey = APIKey,
-                //HttpClientFactory = new ProxySupportedHttpClientFactory()
-            };
-            var service = new UrlshortenerService(initializer);
-            string val;
-            Console.Write("Enter long URL: ");
-            val = Console.ReadLine();
-            var response = service.Url.Insert(new Url { LongUrl = val }).Execute();
+            string longURL = Console.ReadLine();
+            Console.WriteLine(stringShortenAsync(longURL));
 
-            Console.WriteLine($"Short URL: {response.Id}");
-            Console.ReadKey();
             
+
         }
     }
 }

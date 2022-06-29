@@ -2,6 +2,18 @@
   "version": 3,
   "targets": {
     ".NETCoreApp,Version=v3.1": {
+      "BitlyAPI/4.0.1": {
+        "type": "package",
+        "dependencies": {
+          "Newtonsoft.Json": "9.0.1"
+        },
+        "compile": {
+          "lib/netstandard2.1/BitlyAPI.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.1/BitlyAPI.dll": {}
+        }
+      },
       "Google.Apis/1.41.1": {
         "type": "package",
         "dependencies": {
@@ -1452,6 +1464,21 @@
     }
   },
   "libraries": {
+    "BitlyAPI/4.0.1": {
+      "sha512": "xP+2TGOQlDgmeu2asGYyPi/TyDCltt3MCxZ20l0wYZQEKNLjCWBX2UwFGdErJjOlPQwP3Ss3DxYY0mFxXRO7ZQ==",
+      "type": "package",
+      "path": "bitlyapi/4.0.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "bitly.png",
+        "bitlyapi.4.0.1.nupkg.sha512",
+        "bitlyapi.nuspec",
+        "lib/net45/BitlyAPI.dll",
+        "lib/netstandard2.0/BitlyAPI.dll",
+        "lib/netstandard2.1/BitlyAPI.dll"
+      ]
+    },
     "Google.Apis/1.41.1": {
       "sha512": "/gNhxyiCY66ElHrOG0jMg6l13++PXFn69ULoeDabA92z4tCMzTBToY2XuuZhcxHzROcAjiVWPpj03ZEJl7s5kg==",
       "type": "package",
@@ -5348,6 +5375,7 @@
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v3.1": [
+      "BitlyAPI >= 4.0.1",
       "Google.Apis.Urlshortener.v1 >= 1.41.1.138"
     ]
   },
@@ -5395,6 +5423,10 @@
       "netcoreapp3.1": {
         "targetAlias": "netcoreapp3.1",
         "dependencies": {
+          "BitlyAPI": {
+            "target": "Package",
+            "version": "[4.0.1, )"
+          },
           "Google.Apis.Urlshortener.v1": {
             "target": "Package",
             "version": "[1.41.1.138, )"

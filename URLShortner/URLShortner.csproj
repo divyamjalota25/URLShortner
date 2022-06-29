@@ -6,6 +6,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="BitlyAPI" Version="4.0.1" />
     <PackageReference Include="Google.Apis.Urlshortener.v1" Version="1.41.1.138" />
   </ItemGroup>
 

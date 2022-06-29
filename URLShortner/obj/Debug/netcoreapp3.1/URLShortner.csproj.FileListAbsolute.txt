@@ -18,3 +18,4 @@ C:\Users\Whitefang\source\repos\URLShortner\URLShortner\obj\Debug\netcoreapp3.1\
 C:\Users\Whitefang\source\repos\URLShortner\URLShortner\obj\Debug\netcoreapp3.1\URLShortner.dll
 C:\Users\Whitefang\source\repos\URLShortner\URLShortner\obj\Debug\netcoreapp3.1\URLShortner.pdb
 C:\Users\Whitefang\source\repos\URLShortner\URLShortner\obj\Debug\netcoreapp3.1\URLShortner.genruntimeconfig.cache
+C:\Users\Whitefang\source\repos\URLShortner\URLShortner\bin\Debug\netcoreapp3.1\BitlyAPI.dll
